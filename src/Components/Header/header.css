@@ -1,0 +1,20 @@
+@keyframes moveLeft {
+    0% {
+    transform: translateX(0%);
+    }
+    100% {
+    transform: translateX(-100%);
+    }
+    }
+    
+    .moving-text {
+    animation: moveLeft 8s linear infinite; 
+    font-family: 'Times New Roman', Times, serif;
+    }
+    .nav-link{
+        font-family: 'Times New Roman', Times, serif;
+        color:black;
+    }
+    .navbar{
+        background-color: rgba(17, 25, 24, 0.145);
+    }
