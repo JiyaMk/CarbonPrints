@@ -96,7 +96,7 @@ class Header extends React.Component {
                 </li>
                   <li className="nav-item">
                   <a className="nav-link fs-5 px-4" href="#">
-                    Register
+                    Sign Up
                   </a>
                 </li>
                   <li className="nav-item">

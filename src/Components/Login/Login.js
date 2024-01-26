@@ -5,6 +5,8 @@ export const Login = () => {
     return (
         <>
         <Header/>
+        <div className="container-l">
+        <div className="overlay"></div>
         <div class="login-box">
             <h2><b>Login</b></h2>
             <form action="#" method="post">
@@ -13,6 +15,7 @@ export const Login = () => {
                 <button type="submit">Login</button>
             </form>
                 <p class="small-text">Don't have an account? <a href="signup.html" target="_blank">Sign Up</a></p>      
+        </div>
         </div>
     </>
     );

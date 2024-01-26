@@ -6,6 +6,8 @@ export const Register = () => {
     return (
         <>
             <Header/>
+            <div className="container">
+            <div className="overlay"></div>
             <div className="Signup-box">
                 <h2><b>Sign up</b></h2>
                 <form action="#" method="post">
@@ -16,6 +18,7 @@ export const Register = () => {
                     <button type="submit">Sign up</button>
                 </form>
                 <p class="small-text">Already have an account? <a href="signup.html" target="_blank">Login</a></p>
+            </div>
             </div>
             </>
     );
