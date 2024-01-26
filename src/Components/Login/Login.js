@@ -5,6 +5,7 @@ export const Login = () => {
     return (
         <>
         <Header/>
+        <div className="bg-content">
         <div className="container-l">
         <div className="overlay"></div>
         <div class="login-box">
@@ -17,6 +18,7 @@ export const Login = () => {
                 <p class="small-text">Don't have an account? <a href="signup.html" target="_blank">Sign Up</a></p>      
         </div>
         </div>
+    </div>
     </>
     );
 };
