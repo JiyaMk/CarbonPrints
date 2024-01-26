@@ -22,7 +22,7 @@ class Header extends React.Component {
   render() {
     return (
       <div>
-        <nav className="navbar navbar-expand-lg">
+        <nav className="navbar navbar-expand-lg ">
           {/* Logo */}
           <div className="container-fluid">
             <a className="navbar-brand px-3" href="#">
