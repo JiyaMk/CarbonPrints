@@ -120,7 +120,7 @@ class Header extends React.Component {
         </nav>
 
         {/* Separator Line */}
-        <hr className="m-0" style={{ borderTop: '5px solid black', width: '100%' }} />
+        <hr className="m-0" style={{ borderTop: '2px solid black', width: '100%' }} />
       </div>
     );
   }

@@ -10,11 +10,21 @@
     .moving-text {
     animation: moveLeft 8s linear infinite; 
     font-family: 'Times New Roman', Times, serif;
+    color: yellowgreen !important;
     }
     .nav-link{
         font-family: 'Times New Roman', Times, serif;
         color:white;
     }
+    .navbar .nav-link:active,
+     .navbar .nav-link:hover {
+    color: yellowgreen !important;
+}
+
+    .navbar .nav-link:active {
+    background-color: rgb(96, 96, 87) !important;
+}
+
     .navbar{
-        background-color: rgba(120, 145, 120, 0.2);
+        background-color: #222;
     }
