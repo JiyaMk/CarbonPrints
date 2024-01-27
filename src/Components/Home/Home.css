@@ -1,25 +1,25 @@
 .landing-container {
   position: relative;
-  z-index:0;
+    z-index:0;
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     font-size: 16px;
-    background-image: url('../../Assets/bg1.jpg');
+    background-image: url('../../Assets/bg-5.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     justify-content:flex-start;
     display: flex;
     flex-direction: column;
   }
-  .overlay {
+  .overlayT {
     position: absolute;
     z-index: -1;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    backdrop-filter: blur(10px); 
+     background-color: rgba(37, 38, 40, 0.142);
   }
 .container-landing{
     z-index: 1;
@@ -27,27 +27,50 @@
     z-index:0;
     width:100%;
     height:70%;
-    border: 1px solid rgba(84, 130, 85, 0.2);
-    background-color: rgba(120, 145, 120, 0.2);
+   
 }
 .about{
-  margin: 10rem;
+  margin: 7rem;
   text-align: center;
   padding-left: 10rem;
   padding-right:10rem;
   font-size: 28px;
   font-family: 'Poppins';
-  font-weight: 500;
+  font-weight: 800;
   color: white;
 }
+@keyframes slideIn {
+  from {
+    margin-top: -10rem; /* Adjust the starting position */
+    opacity: 0;
+  }
+  to {
+    margin-top: 2rem;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .functions h2 {
   margin-top: 2rem;
   font-weight: 700;
   line-height: 1.5;
   margin-bottom: 2rem;
+  font-family: 'Helvetica Neue';
+  animation: slideIn 2s ease, fadeIn 1s ease; /* Add the animations */
 }
-.functions{
-  color:black;
+
+.functions {
+  color: black;
   background-color: white;
   padding: 2rem 20rem;
+  animation: fadeIn 2s ease; /* Add the animation */
 }

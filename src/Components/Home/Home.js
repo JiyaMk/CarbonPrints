@@ -9,7 +9,7 @@ export const Home = () =>{
         <Header/>
         <div className="landing-container">
             <div className="container-landing">
-            <div className="overlay"></div>
+            <div className="overlayT"></div>
             <div className="about">
             <p>Our vision is to empower individuals to make a positive impact on the environment.</p>
             </div>
