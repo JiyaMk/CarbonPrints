@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 .footer {
   background-color: #333;
   color: #fff;
@@ -8,16 +12,25 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: 0; /* Remove any default margin */
+  overflow: hidden; /* Hide any content overflow */
 }
-.Quick ul{
-list-style: none;
+
+.Quick ul {
+  list-style: none;
+  padding: 0; /* Remove default padding for the list */
 }
+
+.Quick ul li {
+  margin-bottom: 10px; /* Add some spacing between list items */
+}
+
 .Quick ul li a {
   color: #fff;
   text-decoration: none;
 }
 
- .Quick ul li a:hover {
+.Quick ul li a:hover {
   text-decoration: underline;
 }
 
