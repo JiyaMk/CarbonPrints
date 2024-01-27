@@ -72,5 +72,14 @@
   color: black;
   background-color: white;
   padding: 2rem 20rem;
-  animation: fadeIn 2s ease; /* Add the animation */
+  
 }
+.functions p{
+  animation: fadeIn 2s ease; /* Add the animation */
+  transition: background-color 0.3s ease;
+}
+.functions p:hover {
+  background-color: lightgray; /* Change the background color on hover */
+}
+
+
