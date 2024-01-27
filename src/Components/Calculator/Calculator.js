@@ -39,14 +39,19 @@ const Calculator = () => {
       backgroundImage: 'url("waste.jpg")',
     },
   ];
+  const handleNext = () => {
+    const nextIndex = (currentIndex + 1) % topics.length;
+    setCurrentIndex(nextIndex);
+  };
+
 
   return (
-      <>
-      <Header/>
-    <div className="calculator-page">
-      <div className="left-column">
-        <h4>Topics</h4>
-        <ul>
+    <>
+      <Header />
+      <div className="calculator-page">
+        <div className="left-column">
+          <h4>Topics</h4>
+          <ul>
           {topics.map((topic, index) => (
             <li key={index}>
               <button onClick={() => setCurrentIndex(index)} className={currentIndex === index ? 'active' : ''}>
@@ -54,13 +59,17 @@ const Calculator = () => {
               </button>
             </li>
           ))}
-        </ul>
-      </div>
-      <div className="carousel-container">
-        <Carousel activeIndex={currentIndex} onSelect={(index) => setCurrentIndex(index)}>
-          {topics.map((topic, index) => (
-            <Carousel.Item key={index} style={{ backgroundImage: topic.backgroundImage,opacity: 0.9, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-              <div className="center-content">
+          </ul>
+        </div>
+        <div className="carousel-container">
+          <Carousel
+            activeIndex={currentIndex}
+            onSelect={(index) => setCurrentIndex(index)}
+            controls={false} // Hide the default carousel controls
+          >
+            {topics.map((topic, index) => (
+              <Carousel.Item key={index} style={{ backgroundImage: topic.backgroundImage, opacity: 0.9, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+                    <div className="center-content">
                 <div className="content-wrapper">
                   <h3>{topic.title}</h3>
                   <p>{topic.questions[0]}</p>
@@ -75,12 +84,19 @@ const Calculator = () => {
                   <Button variant="light">{topic.options[3]}</Button>
                 </div>
               </div>
+              <Button className='NextButton' variant="info" onClick={handleNext}>
+              Next
+            </Button>
             </Carousel.Item>
           ))}
-        </Carousel>
+          
+          </Carousel>
+          <div className="next-button-container">
+            
+          </div>
+        </div>
       </div>
-    </div>
-       <Footer/>
+      <Footer />
     </>
   );
 };
