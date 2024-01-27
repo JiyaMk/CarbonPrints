@@ -89,6 +89,15 @@ class Header extends React.Component {
                 </>
                 ):( 
                   <>
+                  <li className="nav-item dropdown">
+                  <a className="nav-link dropdown-toggle fs-5 px-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Insights
+                  </a>
+                  <ul className="dropdown-menu">
+                    <li><a className="dropdown-item" href="#">About Carbon Footprint</a></li>
+                    <li><a className="dropdown-item" href="#">Steps Towards Sustainability</a></li>
+                  </ul>
+                </li>
                   <li className="nav-item">
                   <a className="nav-link fs-5 px-4" href="#">
                     Login
