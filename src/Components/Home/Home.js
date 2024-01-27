@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../Header/header';
+import Footer from '../Footer/footer';
 import './Home.css';
 
 export const Home = () =>{
@@ -22,6 +23,7 @@ export const Home = () =>{
 <p>At CO2Prints, collaborating with us is a uniquely positive experience. Our unwavering commitment is to deliver the highest level of service, making your work not only meaningful but also executed seamlessly, rapidly, and cost-effectively. We specialize in offering a unique and personalized experience for individuals who are passionate about understanding and reducing their carbon footprint. </p>
             </div>
         </div>
+        <Footer/>
         </>
     );
 };

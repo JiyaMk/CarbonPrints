@@ -1,12 +1,13 @@
 import React from 'react';
 import './footer.css'; 
 
-class footer extends React.Component {
+class Footer extends React.Component {
   render() {
     return (
-      <footer className="footer">
-        <div className="container">
-          <div className="row">
+      <div>
+     <footer className="footer">
+        <div className="container-footer">
+          <div className="row row-footer">
             {/* Contact Section */}
             <div className="col-md-1"></div>
             <div className="col-md-5">
@@ -20,7 +21,7 @@ class footer extends React.Component {
 
             {/* Quick Links Section */}
             <div className='col-md-3'></div>
-            <div className="col-md-3">
+            <div className="col-md-3 Quick">
               <h4>Quick Links</h4>
               <ul>
                 <li><a href="#">Home</a></li>
@@ -35,13 +36,14 @@ class footer extends React.Component {
 
         {/* Copyright Section */}
         <div className="copyright">
-          <div className="container">
+          <div className="container-footer">
             <p>&copy; 2024 Your Company. All rights reserved.</p>
           </div>
         </div>
       </footer>
+      </div>
     );
   }
 }
 
-export default footer;
+export default Footer;
