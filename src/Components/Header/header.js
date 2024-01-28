@@ -27,9 +27,9 @@ class Header extends React.Component {
           <div className="container-fluid">
             <a className="navbar-brand px-3" href="#">
               <img
-                src="./logo192.png"
+                src="./logo.png"
                 alt="Logo"
-                style={{ width: '50px', height: '50px' }}
+                style={{ width: '140px', height: '60px' }}
               />
             </a>
 
