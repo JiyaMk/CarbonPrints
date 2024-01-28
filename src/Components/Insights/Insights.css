@@ -1,0 +1,144 @@
+/* insight.css */
+/* insight.css */
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+.left-content .para{
+    animation: slideInFromLeft 2s ease-in-out;
+}
+.left-content h2{
+    animation: slideInFromRight 2s ease-in-out;
+}
+.right-content h2{
+    animation: slideInFromLeft 2s ease-in-out;
+}
+.right-content .para{
+    animation: slideInFromRight 2s ease-in-out;
+}
+.card img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+.insight-page {
+    position: relative;
+    width: 100%;
+    height: 170vh; /* Adjust height as needed */
+    overflow: hidden;
+  }
+  
+  .video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .insight-content {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top:35%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .left-content {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-around;
+    margin:1rem;
+    width: 80rem;
+    margin-bottom: 5rem;
+  }
+  
+  .right-content {
+    margin: 1rem;
+    padding:1rem;
+    display: flex;
+    justify-content: space-around;
+    width: 80rem; /* Adjust width as needed */
+    
+    
+  }
+  
+ .insight-content h2 {
+    margin-top: 3rem;
+    font-size: 35px;
+    font-weight: 750;
+    margin-bottom: 10px;
+    color:white;
+  }
+  
+  .para {
+    background-color: rgba(31, 33, 33, 0.315);
+    border-radius: 5px;
+    position: relative;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #fff;
+    width:50%;
+    padding: 1rem;
+    animation: slideInFromRight 1s ease-in-out;
+  }
+  .card-container h2 {
+    position: relative;
+    left:33%;
+    font-weight: 750;
+    font-size: 30px;
+    color: white;
+    height:2rem;
+    width:30rem;
+    animation: slideInFromLeft 1s ease-in-out;
+  }
+  
+  .card-container {
+    display: flex;
+    position: absolute;
+    top:65%;
+
+  }
+  
+  .card {
+    overflow-y: hidden;
+    position: relative;
+    top:5rem;
+    right:19%;
+    width: 200px;
+    height: 280px;
+    background-color: rgba(31, 33, 33, 0.315);
+    border: 1px solid #ddd;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+  }
+  
