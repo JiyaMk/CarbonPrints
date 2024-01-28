@@ -10,7 +10,7 @@ function Insights() {
       <div className="insight-page">
         <div className="video-background">
           <video autoPlay loop muted>
-            <source src="pexels_videos_2169880 (2160p).mp4" type="video/mp4" />
+            <source src="videobg.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
