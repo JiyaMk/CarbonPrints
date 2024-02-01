@@ -1,5 +1,6 @@
 import React from 'react';
 import './header.css';
+import { Link } from 'react-router-dom';
 
 class Header extends React.Component {
   constructor(props) {
@@ -90,28 +91,32 @@ class Header extends React.Component {
                 ):( 
                   <>
                   <li className="nav-item dropdown">
-                  <a className="nav-link dropdown-toggle fs-5 px-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a className="nav-link dropdown-toggle fs-5 px-4" href="/insights" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Insights
                   </a>
                   <ul className="dropdown-menu">
-                    <li><a className="dropdown-item" href="#">About Carbon Footprint</a></li>
-                    <li><a className="dropdown-item" href="#">Steps Towards Sustainability</a></li>
+                    <li><Link className="dropdown-item" to="/insights">
+                      About Carbon Footprint
+                    </Link></li>
+                    <li><Link className="dropdown-item" to="/insights">
+                      Steps towards Sustainability
+                    </Link></li>
                   </ul>
                 </li>
                   <li className="nav-item">
-                  <a className="nav-link fs-5 px-4" href="#">
-                    Login
-                  </a>
+                  <Link className="nav-link fs-5 px-4" to="/login">
+                      Login
+                    </Link>
                 </li>
                   <li className="nav-item">
-                  <a className="nav-link fs-5 px-4" href="#">
-                    Sign Up
-                  </a>
+                  <Link className="nav-link fs-5 px-4" to="/register">
+                      Sign Up
+                    </Link>
                 </li>
                   <li className="nav-item">
-                  <a className="nav-link fs-5 px-4" href="#">
-                    About
-                  </a>
+                  <Link className="nav-link fs-5 px-4" to="/about">
+                      About
+                    </Link>
                 </li></>
                 )}
               </ul>
