@@ -71,12 +71,37 @@
     margin: 5px;}
 .center-content{
     position: relative;
-    top:20%
+    top:20%;
 }
   
-.NextButton{
+.NextButton {
   position: relative;
   right:-30rem;
   padding-left:15px;
   padding-right:15px;
+}
+.ViewResultButton{
+  position: relative;
+  right:-30rem;
+  padding-left:15px;
+  padding-right:15px;
+}
+.RetakeTestButton{
+  background-color: #0dcaf0 !important;
+  position: relative;
+  left:1.2rem;
+  top: 10rem;
+}
+.RetakeTestButton:hover{
+  background-color: #04262d;
+}
+.ResultHeading{
+  margin-top:5rem;
+  text-align: center;
+}
+.ResultContainer{
+  height: 80vh;
+}
+.ResultContent{
+  text-align: center;
 }

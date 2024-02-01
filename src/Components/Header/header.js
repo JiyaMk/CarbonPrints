@@ -29,7 +29,7 @@ class Header extends React.Component {
               <img
                 src="./logo.png"
                 alt="Logo"
-                style={{ width: '140px', height: '60px' }}
+                style={{ width: '130px', height: '50px' }}
               />
             </a>
 
