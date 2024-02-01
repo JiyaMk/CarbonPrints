@@ -2,6 +2,7 @@ import React from 'react';
 import './Landing.css'; // You will need to create a CSS file for styling
 import Header from '../Header/header';
 import Footer from '../Footer/footer';
+import { Link } from 'react-router-dom';
 const Landing = () => {
   return (
     <>
@@ -15,7 +16,8 @@ const Landing = () => {
       <div className="content">
         <h1 className="heading">Welcome to Carbon Prints</h1>
         <p className="paragraph">Elevate Consciousness, Minimize Footprints: Charting a Course Towards Sustainability.</p>
-        <button className="button">Get Started</button>
+        <button className="button"><Link style={{ textDecoration: 'none' }} className="button" to="/register">Get Started
+                    </Link></button>
       </div>
     </div>
     <Footer/>
