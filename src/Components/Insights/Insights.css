@@ -68,6 +68,7 @@
     transform: translate(-50%, -50%);
     align-items: center;
     flex-direction: column;
+    
   }
   
   .left-content {
@@ -77,11 +78,10 @@
     margin:1rem;
     width: 80rem;
     margin-bottom: 5rem;
+    
   }
   
   .right-content {
-    margin: 1rem;
-    padding:1rem;
     display: flex;
     justify-content: space-around;
     width: 80rem; /* Adjust width as needed */
@@ -108,29 +108,29 @@
     padding: 1rem;
     animation: slideInFromRight 1s ease-in-out;
   }
-  .card-container h2 {
+  .stepstoward{
     position: relative;
-    left:33%;
+    align-items: center;
     font-weight: 750;
     font-size: 30px;
     color: white;
     height:2rem;
     width:30rem;
     animation: slideInFromLeft 1s ease-in-out;
+    background-color: black;
   }
   
   .card-container {
     display: flex;
     position: absolute;
-    top:65%;
+    top:100%;
 
   }
   
   .card {
     overflow-y: hidden;
     position: relative;
-    top:5rem;
-    right:19%;
+    top:3rem;
     width: 200px;
     height: 280px;
     background-color: rgba(31, 33, 33, 0.315);

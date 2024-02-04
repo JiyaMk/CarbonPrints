@@ -40,11 +40,12 @@ function Insights() {
             </p>
             <h2>Sustainability</h2>
           </div>
-        </div>
+        
 
         {/* Card Container and Cards */}
+        <h2 className="Stepstoward">Steps towards Sustainability</h2>
         <div className="card-container">
-          <h2>Steps towards Sustainability</h2>
+        
           <div className="card" style={{ width: "18rem" }}>
             <img src="reuse.jpg" className="card-img-top" alt="..." />
             <div className="card-body">
@@ -84,6 +85,7 @@ function Insights() {
               </p>
             </div>
           </div>
+        </div>
         </div>
       </div>
       <Footer />
