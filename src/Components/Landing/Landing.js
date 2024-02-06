@@ -2,6 +2,7 @@ import React from 'react';
 import './Landing.css'; // You will need to create a CSS file for styling
 import Header from '../Header/header';
 import Footer from '../Footer/footer';
+import Chatbot from '../Chatbot/chatbot';
 import { Link } from 'react-router-dom';
 const Landing = () => {
   return (
@@ -21,6 +22,7 @@ const Landing = () => {
       </div>
     </div>
     <Footer/>
+    <Chatbot/>
     </>
   );
 };

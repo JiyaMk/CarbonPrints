@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../Header/header';
 import Footer from '../Footer/footer';
+import Chatbot from '../Chatbot/chatbot';
 import './Home.css';
 
 export const Home = () =>{
@@ -24,6 +25,7 @@ export const Home = () =>{
             </div>
         </div>
         <Footer/>
+        <Chatbot/>
         </>
     );
 };
