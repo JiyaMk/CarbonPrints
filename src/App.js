@@ -6,6 +6,7 @@ import { Home } from './Components/Home/Home';
 import Calculator from './Components/Calculator/Calculator';
 import Insights from './Components/Insights/Insights';
 import Landing from './Components/Landing/Landing';
+import { Dashboard } from './Components/Dashboard/Dashboard';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/calculator" element={<Calculator />} />
         <Route path="/insights" element ={<Insights/>}/>
+        <Route path="/dashboard" element ={<Dashboard/>}/>
       </Routes>
     </Router>
   );

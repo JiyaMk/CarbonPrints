@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+::-webkit-scrollbar{
+  width: 12px;
+}
+::-webkit-scrollbar-track{
+  background: rgb(72, 92, 85);
+}
+::-webkit-scrollbar-thumb{
+  background: rgb(135, 162, 152);
+}
+::-webkit-scrollbar-thumb:hover{
+  background: rgb(232, 236, 232);
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&family=Poppins&display=swap');

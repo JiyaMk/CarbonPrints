@@ -1,0 +1,59 @@
+.dashbody{
+    display: flex;
+    flex-direction: row;
+    height:100vh;
+    justify-content:flex-start;
+    font-family: 'Neto Sans','Sans Serif';
+    background-color: rgb(84, 113, 182);
+}
+
+.left-dash{
+    padding: 10px;
+    max-height: auto;
+    width: 20%;
+    background-color: rgb(100, 135, 216);
+}
+.left-dash h4{
+    padding:10px;
+    text-align: center;
+    color:black;
+}
+#sidebar {
+    display: flex;
+    flex-direction: column;
+}
+#sidebar button{
+    background-color: rgb(107, 145, 233);
+    color:black;
+    border-radius: 0px;
+}
+#sidebar button:hover{
+    background-color:rgb(230, 242, 237);
+}
+.mid-dash{
+    /* background-color: blue; */
+    width: 80%;
+}
+
+.card{
+    margin:15px 60px 15px 50px;
+    height:40vh;
+    width: 70vw;
+    border: 0px;
+}
+.right-dash{
+    margin-top: 10px;
+    padding:25px;
+    display:flex;
+    flex-direction: column;
+}
+.right-dash button {
+    height: 1rem;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+.profile-image img {
+    width: 150px;
+    height: 150px; 
+}
