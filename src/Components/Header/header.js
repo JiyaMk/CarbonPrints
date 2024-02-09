@@ -5,18 +5,23 @@ import { Link } from 'react-router-dom';
 class Header extends React.Component {
   constructor(props) {
     super(props);
+    // Initialize isLoggedIn to false by default
     this.state = {
       isLoggedIn: false,
     };
   }
 
-  handleLogin = () => {
-    // Simulate a login action (you would typically call an authentication API here)
-    this.setState({ isLoggedIn: true });
-  };
+  componentDidMount() {
+    // Check if the user was previously logged in
+    const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+    if (isLoggedIn) {
+      this.setState({ isLoggedIn: true });
+    }
+  }
 
   handleLogout = () => {
-    // Simulate a logout action
+    // Clear localStorage and set isLoggedIn to false
+    localStorage.clear();
     this.setState({ isLoggedIn: false });
   };
 
@@ -58,50 +63,50 @@ class Header extends React.Component {
                 {/* Menu Items */}
                 {this.state.isLoggedIn ? (
                   <>
+                {/* <li className="nav-item">
+                <Link className="nav-link fs-5 px-4" to="/home">
+                      Home
+                    </Link>
+                </li> */}
                 <li className="nav-item">
-                  <a className="nav-link active fs-5 px-4" href="#">
-                    Home
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link fs-5 px-4" href="#">
-                    Calculator
-                  </a>
+                <Link className="nav-link fs-5 px-4" to="/calculator">
+                      Calculator
+                    </Link>
                 </li>
                 <li className="nav-item dropdown">
-                  <a className="nav-link dropdown-toggle fs-5 px-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Insights
-                  </a>
-                  <ul className="dropdown-menu">
+                <Link className="nav-link fs-5 px-4" to="/insights">
+                      Insights
+                    </Link>
+                  {/* <ul className="dropdown-menu">
                     <li><a className="dropdown-item" href="#">About Carbon Footprint</a></li>
                     <li><a className="dropdown-item" href="#">Steps Towards Sustainability</a></li>
-                  </ul>
+                  </ul> */}
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link fs-5 px-4" href="#">
-                    Dashboard
-                  </a>
+                <Link className="nav-link fs-5 px-4" to="/dashboard">
+                      Dashboard
+                    </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link fs-5 px-4" href="#">
-                    About
-                  </a>
+                <Link className="nav-link fs-5 px-4" to="/about">
+                      About
+                    </Link>
                 </li>
                 </>
                 ):( 
                   <>
                   <li className="nav-item dropdown">
-                  <a className="nav-link dropdown-toggle fs-5 px-4" href="/insights" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Insights
-                  </a>
-                  <ul className="dropdown-menu">
+                  <Link className="nav-link fs-5 px-4" to="/insights">
+                      Insights
+                    </Link>
+                  {/* <ul className="dropdown-menu">
                     <li><Link className="dropdown-item" to="/insights">
                       About Carbon Footprint
                     </Link></li>
                     <li><Link className="dropdown-item" to="/insights">
                       Steps towards Sustainability
-                    </Link></li>
-                  </ul>
+                    </Link></li> */}
+                  {/* </ul> */}
                 </li>
                   <li className="nav-item">
                   <Link className="nav-link fs-5 px-4" to="/login">

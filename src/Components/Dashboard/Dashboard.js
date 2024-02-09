@@ -4,7 +4,7 @@ import Footer from "../Footer/footer";
 import Chatbot from "../Chatbot/chatbot";
 import './Dashboard.css';
 import DisplayDash from './DisplayDash';
-
+import { useNavigate } from 'react-router-dom';
 
 export const Dashboard = (userDetails, profileImg) => {
     const [visibleCard, setVisibleCard] = useState(1); // Default to card 1 being visible
@@ -14,9 +14,12 @@ export const Dashboard = (userDetails, profileImg) => {
         setVisibleCard(cardNumber);
     };
 
-    const handleEditClick = () => {
-        console.log("Edit button");
-    }
+    const navigate = useNavigate();
+
+    const handleLogout = () => {
+        localStorage.clear();
+        navigate('/login');
+    };
 
     return (
         <>
@@ -28,7 +31,7 @@ export const Dashboard = (userDetails, profileImg) => {
                     <span > <img src={profileImg} alt="Profile" /> </span>
                     <p>Name: {userDetails.name}</p>
                     <p>Email: {userDetails.email}</p>
-                    <button type="button" onClick={handleEditClick}>Edit</button>
+                    <button type="button" onClick={handleLogout}>Logout</button>
                 </div>
                     <h4>Emissions by type</h4>
                     <div id="sidebar">

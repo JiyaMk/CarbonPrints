@@ -18,6 +18,7 @@ function Login() {
                 password: password
             })
             if (response.data.msg === "Login successful") {
+                localStorage.setItem('isLoggedIn', 'true');
                 alert("Login successful");
                 navigate('/dashboard'); 
             } else {
