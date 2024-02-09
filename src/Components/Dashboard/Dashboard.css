@@ -4,14 +4,14 @@
     height:100vh;
     justify-content:flex-start;
     font-family: 'Neto Sans','Sans Serif';
-    background-color: rgb(84, 113, 182);
+    background-color:#fff;
 }
 
 .left-dash{
     padding: 10px;
     max-height: auto;
     width: 20%;
-    background-color: rgb(100, 135, 216);
+    background-color: #00A064;
 }
 .left-dash h4{
     padding:10px;
@@ -23,23 +23,38 @@
     flex-direction: column;
 }
 #sidebar button{
-    background-color: rgb(107, 145, 233);
-    color:black;
-    border-radius: 0px;
+    background-color: rgb(251, 251, 251);
+    color:rgb(0, 0, 0);
+    border-radius: 5px;
+    margin: 0.5rem 1.2rem;
 }
 #sidebar button:hover{
-    background-color:rgb(230, 242, 237);
+    background-color:#87e9a9;
 }
 .mid-dash{
     /* background-color: blue; */
     width: 80%;
+        background-image: url('../../Assets/bg-10.jpg'); 
+        background-size: cover;
+        background-position: center; 
+        
+      
 }
-
+.right-dash button{
+    background-color: black;
+    padding: 1rem;
+    border-style: groove;
+    border:1px solid grey ;
+}
+.right-dash button:hover{
+    background-color: rgb(37, 36, 41);
+}
 .card{
     margin:15px 60px 15px 50px;
     height:40vh;
     width: 70vw;
     border: 0px;
+    background-color: #0000002b;
 }
 .right-dash{
     margin-top: 10px;
