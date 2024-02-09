@@ -40,10 +40,16 @@ function Insights() {
         {/* Card Container and Cards */}
         <h2 className="Stepstoward">Steps towards Sustainability</h2>
         <div className="card-container">
+        <div className="cardI" style={{ width: "18rem" }}>
+            <img src="reuse.jpg" className="card-img-top" alt="..." />
+            <div className="card-body">
+              <p className="card-text">
+              Avoid single-use plastics and disposable items.Reuse and recycle.
+              </p>
+            </div>
+          </div>
         
-          
-
-          <div className="card" style={{ width: "18rem" }}>
+          <div className="cardI" style={{ width: "18rem" }}>
             <img src="energyC.jpg" className="card-img-top" alt="..." />
             <div className="card-body">
               <p className="card-text">
@@ -53,7 +59,7 @@ function Insights() {
             </div>
           </div>
 
-          <div className="card" style={{ width: "18rem" }}>
+          <div className="cardI" style={{ width: "18rem" }}>
             <img src="Ptrasnsport.jpg" className="card-img-top" alt="..." />
             <div className="card-body">
               <p className="card-text">
@@ -62,7 +68,7 @@ function Insights() {
             </div>
           </div>
 
-          <div className="card" style={{ width: "18rem" }}>
+          <div className="cardI" style={{ width: "18rem" }}>
             <img src="water.jpg" className="card-img-top" alt="..." />
             <div className="card-body">
               <p className="card-text">
