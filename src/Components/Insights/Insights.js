@@ -18,25 +18,20 @@ function Insights() {
           <div className="left-content">
             <h2>Carbon Footprint</h2>
             <p className="para Right">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            A "carbon footprint" represents the total amount of greenhouse gases, primarily carbon dioxide, 
+            emitted directly or indirectly by human activities. This encompasses various actions, from driving cars
+             and using electricity to consuming goods and services. By quantifying our carbon footprint, we gain insight into our environmental impact and 
+            can identify opportunities for reducing emissions to combat climate change and promote sustainability.
             </p>
           </div>
           <div className="right-content">
             <p className="para left">
-              Paragraph Left 1 Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-              occaecat cupidatat non proident, sunt in culpa qui officia
-              deserunt mollit anim id est laborum.
+            Sustainability refers to the practice of meeting the needs of the present without compromising the 
+            ability of future generations to meet their own needs. It involves balancing economic, social, and 
+            environmental considerations to ensure that resources are used responsibly and equitably, fostering 
+            resilience and long-term well-being for both people and the planet. Embracing sustainability involves
+             adopting practices and policies that promote conservation, minimize waste, promote renewable energy,
+              protect biodiversity.
             </p>
             <h2>Sustainability</h2>
           </div>
@@ -46,22 +41,14 @@ function Insights() {
         <h2 className="Stepstoward">Steps towards Sustainability</h2>
         <div className="card-container">
         
-          <div className="card" style={{ width: "18rem" }}>
-            <img src="reuse.jpg" className="card-img-top" alt="..." />
-            <div className="card-body">
-              <p className="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-            </div>
-          </div>
+          
 
           <div className="card" style={{ width: "18rem" }}>
             <img src="energyC.jpg" className="card-img-top" alt="..." />
             <div className="card-body">
               <p className="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+              Switching to energy-efficient light bulbs, such as LEDs, can lower electricity consumption .
+        
               </p>
             </div>
           </div>
@@ -70,8 +57,7 @@ function Insights() {
             <img src="Ptrasnsport.jpg" className="card-img-top" alt="..." />
             <div className="card-body">
               <p className="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+              Opting for public transportation, such as buses or trains, instead of individual cars can significantly reduce carbon emissions.
               </p>
             </div>
           </div>
@@ -80,8 +66,8 @@ function Insights() {
             <img src="water.jpg" className="card-img-top" alt="..." />
             <div className="card-body">
               <p className="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+              Opt for reusable water bottles made of sustainable materials to reduce plastic waste and promote water conservation.
+        
               </p>
             </div>
           </div>

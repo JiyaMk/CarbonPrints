@@ -131,14 +131,18 @@
     overflow-y: hidden;
     position: relative;
     top:3rem;
-    width: 200px;
-    height: 280px;
     background-color: rgba(31, 33, 33, 0.315);
     border: 1px solid #ddd;
-    margin: 0 10px;
+    margin: 0.1rem;
     display: flex;
     justify-content: center;
     align-items: center;
     color:#fff;
+  }
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+     /* Center the cards horizontally */
+    
   }
   

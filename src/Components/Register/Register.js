@@ -49,6 +49,7 @@ function Register() {
                         {error && <p className="error-msg">{error}</p>}
                         <p className="small-text">Already have an account? <Link to="/login">Login</Link></p>
                     </div>
+                    <div className='cartoon'><img src='cartoon-2.png' alt=''></img></div>
                 </div>
             </div>
         </>

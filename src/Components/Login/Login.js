@@ -45,6 +45,7 @@ function Login() {
                         {error && <p className="error-msg">{error}</p>}
                         <p className="small-text">Don't have an account? <Link to="/register">SignUp</Link></p>
                     </div>
+                    <div className='cartoon'><img src='cartoon-2.png' alt=''></img></div>
                 </div>
             </div>
         </>
