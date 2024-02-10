@@ -7,13 +7,6 @@ import Footer from '../Footer/footer';
 const Calculator = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const resultRef = useRef(null); 
-
-  const scrollToResult = () => {
-    if (resultRef.current) {
-      resultRef.current.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   const topics = [
     {
       title: 'Energy Usage',
@@ -86,16 +79,41 @@ const Calculator = () => {
       backgroundImage: 'url("waste.jpg")'
     }
   ];
-  const isLastTopic = currentIndex === topics.length - 1;
+
+  const [selectedOptions, setSelectedOptions] = useState(Array.from({ length: topics.length }, () => [-1, -1])); 
+
+  const scrollToResult = () => {
+    if (resultRef.current) {
+      resultRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleOptionSelect = (topicIndex, questionIndex, optionIndex) => {
+    const updatedSelectedOptions = [...selectedOptions];
+    if (updatedSelectedOptions[topicIndex][questionIndex] === optionIndex) {
+      updatedSelectedOptions[topicIndex][questionIndex] = -1;
+    } else {
+      updatedSelectedOptions[topicIndex][questionIndex] = optionIndex;
+    }
+    setSelectedOptions(updatedSelectedOptions);
+  };
 
   const handleNext = () => {
+    const currentSelectedOptions = selectedOptions[currentIndex];
+    if (currentSelectedOptions.includes(-1)) {
+      alert("Please select an option for each question before proceeding.");
+      return;
+    }
     const nextIndex = (currentIndex + 1) % topics.length;
     setCurrentIndex(nextIndex);
   };
 
   const handleRetakeTest = () => {
-    setCurrentIndex(0); // Go back to the first topic (index 0)
+    setCurrentIndex(0);
+    setSelectedOptions(Array.from({ length: topics.length }, () => [-1, -1]));
   };
+
+  const isLastTopic = currentIndex === topics.length - 1;
 
   return (
     <>
@@ -119,10 +137,11 @@ const Calculator = () => {
           <Carousel
             activeIndex={currentIndex}
             onSelect={(index) => setCurrentIndex(index)}
-            controls={false} // Hide the default carousel controls
+            controls={false} 
+            interval={null} 
           >
             {topics.map((topic, index) => (
-              <Carousel.Item key={index} style={{ backgroundImage: topic.backgroundImage, opacity: 0.9, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+              <Carousel.Item key={index} style={{ backgroundImage: topic.backgroundImage, backgroundSize: 'cover', backgroundPosition: 'center' }}>
                 <div className="center-content">
                   <div className="content-wrapper">
                     <h3>{topic.title}</h3>
@@ -130,13 +149,22 @@ const Calculator = () => {
                       <div key={qIndex}>
                         <p>{question.questionText}</p>
                         {question.options.map((option, oIndex) => (
-                          <Button key={oIndex} variant="light" style={{ opacity: 1, marginBottom: '2rem' }}>{option}</Button>
+                          <Button 
+                            key={oIndex} 
+                            variant={selectedOptions[currentIndex][qIndex] === oIndex ? 'success' : 'light'}
+                            style={{  
+                              marginBottom: '2rem' 
+                            }}
+                            disabled={selectedOptions[currentIndex][qIndex] !== -1 && selectedOptions[currentIndex][qIndex] !== oIndex}
+                            onClick={() => handleOptionSelect(currentIndex, qIndex, oIndex)}
+                          >
+                            {option}
+                          </Button>
                         ))}
                       </div>
                     ))}
                   </div>
-                </div>
-                {isLastTopic && (
+                  {isLastTopic && (
                   <Button className='ViewResultButton' variant="info" onClick={scrollToResult}>
                     View Result
                   </Button>
@@ -146,13 +174,14 @@ const Calculator = () => {
                     Next
                   </Button>
                 )}
+                </div>
               </Carousel.Item>
             ))}
           </Carousel>
           <div className="next-button-container"></div>
         </div>
       </div>
-      <section ref={resultRef} id="sectionId"> {/* Attach the ref to the section */}
+      <section ref={resultRef} id="sectionId">
         <div className='Result'>
           <h1 className='ResultHeading'>Your Result</h1>
           <div className='ResultContainer'>

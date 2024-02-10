@@ -1,108 +1,109 @@
 .calculator-page {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-    height: 86vh; /* Set calculator-page height to full viewport height */
-    font-size: large;
-    font-weight: 600;
-  }
-  
-  .left-column {
-    width: 20%;
-  }
-  
-  .left-column h4 {
-    margin-bottom: 10px;
-  }
-  
-  .left-column ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .left-column li {
-    margin-bottom: 10px;
-  }
-  
-  .left-column button {
-    background: none;
-    border: none;
-    padding: 10px 15px; /* Adjusted button padding */
-    cursor: pointer;
-    font-size: 16px;
-    color: #333;
-  }
-  
-  .left-column button.active {
-    color: #007bff;
-    font-weight: bold;
-  }
-  
-  .carousel-container {
-    width: 80%; /* Adjusted carousel-container width */
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .carousel-caption {
-    text-align: center;
-    color: #333;
-  }
-  
-  .arrow-button {
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-    color: #333;
-  }
-  
-  .carousel-item {
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 80vh; /* Set carousel-item height to 80% of viewport height */
-  }
-  
-  .carousel-item p {
-    margin: 10px 0; /* Adjusted spacing for the questions and options */
-  }
-  
-  .carousel-item button {
-    margin: 5px;}
-.center-content{
-    position: relative;
-    top:20%;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  height: 86vh; /* Set calculator-page height to full viewport height */
+  font-size: large;
+  font-weight: 600;
 }
-  
-.NextButton {
+
+.left-column {
+  width: 20%;
+}
+
+.left-column h4 {
+  margin-bottom: 10px;
+}
+
+.left-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.left-column li {
+  margin-bottom: 10px;
+}
+
+.left-column button {
+  background: none;
+  border: none;
+  padding: 10px 15px; /* Adjusted button padding */
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+}
+
+.left-column button.active {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.carousel-container {
+  width: 80%; /* Adjusted carousel-container width */
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel-caption {
+  text-align: center;
+  color: #333;
+}
+
+.arrow-button {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  color: #333;
+}
+
+.carousel-item {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 80vh; 
+}
+
+.carousel-item p {
+  margin: 10px 0;
+}
+
+.carousel-item button {
+  margin: 5px;
+}
+
+.center-content{
   position: relative;
-  right:-30rem;
-  padding-left:15px;
-  padding-right:15px;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255,255,255,0.5);
+}
+
+.NextButton {
+position: relative;
 }
 .ViewResultButton{
-  position: relative;
-  right:-30rem;
-  padding-left:15px;
-  padding-right:15px;
+position: relative;
 }
 .RetakeTestButton{
-  background-color: #0dcaf0 !important;
-  position: relative;
-  left:1.2rem;
-  top: 10rem;
+background-color: #0dcaf0 !important;
+position: relative;
+left:1.2rem;
+top: 10rem;
 }
 .RetakeTestButton:hover{
-  background-color: #04262d;
+background-color: #04262d;
 }
 .ResultHeading{
-  margin-top:5rem;
-  text-align: center;
+margin-top:5rem;
+text-align: center;
 }
 .ResultContainer{
-  height: 80vh;
+height: 80vh;
 }
 .ResultContent{
-  text-align: center;
+text-align: center;
 }
