@@ -40,17 +40,21 @@ function Insights() {
         {/* Card Container and Cards */}
         <h2 className="Stepstoward">Steps towards Sustainability</h2>
         <div className="card-container">
+      
         <div className="cardI" style={{ width: "18rem" }}>
-            <img src="reuse.jpg" className="card-img-top" alt="..." />
+        <a href="https://www.globalcitizen.org/en/content/tips-reduce-plastic/" target="_blank" rel="noopener noreferrer">
+            <img src="reuse.jpg" className="card-img-top" alt="..." /></a>
             <div className="card-body">
               <p className="card-text">
               Avoid single-use plastics and disposable items.Reuse and recycle.
               </p>
             </div>
           </div>
+          
         
           <div className="cardI" style={{ width: "18rem" }}>
-            <img src="energyC.jpg" className="card-img-top" alt="..." />
+          <a href="https://www.sustainableprinceton.org/your-home/efficient-bulbs-and-appliances/" target="_blank" rel="noopener noreferrer">
+            <img src="energyC.jpg" className="card-img-top" alt="..." /></a>
             <div className="card-body">
               <p className="card-text">
               Switching to energy-efficient light bulbs, such as LEDs, can lower electricity consumption .
@@ -60,7 +64,8 @@ function Insights() {
           </div>
 
           <div className="cardI" style={{ width: "18rem" }}>
-            <img src="Ptrasnsport.jpg" className="card-img-top" alt="..." />
+          <a href="https://www.treehugger.com/how-to-go-green-public-transportation-4858768" target="_blank" rel="noopener noreferrer">
+            <img src="Ptrasnsport.jpg" className="card-img-top" alt="..." /></a>
             <div className="card-body">
               <p className="card-text">
               Opting for public transportation, such as buses or trains, instead of individual cars can significantly reduce carbon emissions.
@@ -69,7 +74,8 @@ function Insights() {
           </div>
 
           <div className="cardI" style={{ width: "18rem" }}>
-            <img src="water.jpg" className="card-img-top" alt="..." />
+          <a href="https://sustainabilityinfo.com/sustainability/how-sustainable-are-reusable-water-bottles/" target="_blank" rel="noopener noreferrer">
+            <img src="water.jpg" className="card-img-top" alt="..." /></a>
             <div className="card-body">
               <p className="card-text">
               Opt for reusable water bottles made of sustainable materials to reduce plastic waste and promote water conservation.

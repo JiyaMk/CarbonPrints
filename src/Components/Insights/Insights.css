@@ -98,7 +98,7 @@
   }
   
   .para {
-    background-color: rgba(31, 33, 33, 0.315);
+    background-color: rgba(21, 23, 23, 0.432);
     border-radius: 5px;
     position: relative;
     font-size: 18px;
@@ -125,6 +125,7 @@
     position: absolute;
     top:100%;
     margin-bottom: 12rem;
+    
 
   }
   
@@ -138,6 +139,13 @@
     justify-content: center;
     align-items: center;
     color:#fff;
+    border-radius: 0.5rem;
+  }
+  .card-body{
+    text-align: center;
+  }
+  .card-img-top{
+    height:12rem;
   }
   
   
