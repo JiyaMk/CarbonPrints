@@ -19,18 +19,19 @@ const Chatbot = () => {
 
   const generateResponse = (message) => {
     switch (message) {
-      case 'What analytics features does your platform offer?':
-        return "Our platform provides comprehensive monthly and yearly reports, allowing businesses to track their carbon emissions over time. You can generate detailed reports, visualize data, and make informed decisions to achieve your sustainability goals.";
-      case 'Tell me about sustainable practices for reducing carbon emissions.':
-        return "To reduce carbon emissions, businesses can implement sustainable practices such as adopting renewable energy sources, optimizing supply chains, and investing in energy-efficient technologies.";
-      case 'Can you explain the dashboard features?':
-        return "Certainly! The dashboard provides a snapshot of your environmental impact. It includes key metrics, graphs, and actionable insights. Feel free to explore each section for a comprehensive overview.";
-      case 'How to calculate our carbon footprint':
-        return "To calculate your carbon footprint, login and navigate to the calculate page. Input details such as energy consumption, transportation habits, etc. The system will then provide you with a detailed analysis.";
+      case "What analytics features does your platform offer?":
+        return "Our platform provides personalized monthly and yearly reports, allowing you to track your carbon footprint over time. You can generate detailed reports, visualize your data, and receive personalized recommendations to help you reduce your environmental impact.";
+      case "Tell me about sustainable practices for reducing my carbon footprint.":
+        return "To reduce your carbon footprint, you can adopt sustainable practices such as reducing energy consumption in your home, using public transportation or carpooling, eating a plant-based diet, and minimizing waste by recycling and composting.";
+      case "Can you explain the features of dashboard?":
+        return "Certainly! Your dashboard provides a personalized view of your environmental impact. It includes key metrics, graphs, and tips tailored to your lifestyle. Feel free to explore each section for a detailed overview and actionable insights.";
+      case "How to calculate our carbon footprints?":
+        return "To calculate your carbon footprint, login and navigate to the calculate page. Input details such as your energy consumption, transportation habits, diet, and lifestyle choices. The system will then provide you with a detailed analysis and personalized recommendations.";
       default:
         return "I'm sorry, I didn't understand that.";
     }
   };
+  
   
   const handleChat = () => {
     const message = userDropdownRef.current.value.trim();
@@ -87,10 +88,10 @@ const Chatbot = () => {
               
               <select id="user-dropdown" ref={userDropdownRef}>
                 
-                <option value="Can you explain the dashboard features?">Can you explain the dashboard features?</option>
-                <option value="Tell me about sustainable practices for reducing carbon emissions.">Tell me about sustainable practices for reducing carbon emissions.</option>
                 <option value="What analytics features does your platform offer?">What analytics features does your platform offer?</option>
-                <option value="How to calculate our carbon footprint">How to calculate our carbon footprint</option>
+                <option value="Tell me about sustainable practices for reducing my carbon footprint.">Tell me about sustainable practices for reducing my carbon footprint.</option>
+                <option value="Can you explain the features of dashboard?">Can you explain the features of dashboard?</option>
+                <option value="How to calculate our carbon footprints?">How to calculate our carbon footprints?</option>
               </select>
             </div>
             <span id="send-btn" className="material-symbols-outlined" onClick={handleChat}>

@@ -110,9 +110,8 @@ body {
     font-size: 1.4rem;
 }
 .chatbox{
-    max-height: 27rem;
-    padding: 15px;
-    padding-bottom: 38px;
+    max-height: 24rem;
+    padding: 12px;
 }
 .chatbox {
     overflow-y: scroll;
@@ -122,6 +121,7 @@ body {
 
 .chatbox::-webkit-scrollbar {
     width: 8px;
+    height: inherit;
 }
 
 .chatbox::-webkit-scrollbar-thumb {
@@ -190,6 +190,8 @@ body {
   font-size: 0.95rem;
   width: 90%;
   overflow: hidden; 
+  display:flex;
+  flex-direction: row;
 }
 
 .options-container label {
