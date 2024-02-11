@@ -1,26 +1,26 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Header from "../Header/header";
 import Footer from "../Footer/footer";
 import Chatbot from "../Chatbot/chatbot";
 import './Dashboard.css';
 import DisplayDash from './DisplayDash';
 import { useNavigate } from 'react-router-dom';
+const axios = require('axios');
 
-export const Dashboard = (userDetails, profileImg) => {
+function Dashboard() {
     const [visibleCard, setVisibleCard] = useState(1); // Default to card 1 being visible
-
     // Function to toggle visibility of each card
+    const name = localStorage.getItem('name');
+    const email = localStorage.getItem('email');
     const toggleCardVisibility = (cardNumber) => {
         setVisibleCard(cardNumber);
     };
-
     const navigate = useNavigate();
-
     const handleLogout = () => {
         localStorage.clear();
         navigate('/login');
     };
-
+    
     return (
         <>
             <Header/>
@@ -28,9 +28,8 @@ export const Dashboard = (userDetails, profileImg) => {
                 <div className="left-dash">
                 <div className="right-dash">
                 <h4>Profile Details</h4>
-                    <span > <img src={profileImg} alt="Profile" /> </span>
-                    <p>Name: {userDetails.name}</p>
-                    <p>Email: {userDetails.email}</p>
+                    <p>Name: {name}</p>
+                    <p>Email: {email}</p>
                     <button type="button" onClick={handleLogout}>Logout</button>
                 </div>
                     <h4>Emissions by type</h4>
@@ -69,3 +68,5 @@ export const Dashboard = (userDetails, profileImg) => {
         </>
     );
 };
+
+export default Dashboard;
