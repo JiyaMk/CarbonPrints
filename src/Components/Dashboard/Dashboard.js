@@ -6,7 +6,7 @@ import './Dashboard.css';
 import DisplayDash from './DisplayDash';
 import { useNavigate } from 'react-router-dom';
 
-export const Dashboard = (userDetails, profileImg) => {
+export const Dashboard = (userDetails) => {
     const [visibleCard, setVisibleCard] = useState(1); // Default to card 1 being visible
 
     // Function to toggle visibility of each card
@@ -28,7 +28,6 @@ export const Dashboard = (userDetails, profileImg) => {
                 <div className="left-dash">
                 <div className="right-dash">
                 <h4>Profile Details</h4>
-                    <span > <img src={profileImg} alt="Profile" /> </span>
                     <p>Name: {userDetails.name}</p>
                     <p>Email: {userDetails.email}</p>
                     <button type="button" onClick={handleLogout}>Logout</button>
