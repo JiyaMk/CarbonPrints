@@ -49,8 +49,6 @@ from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
 
 
-
-
 classifier_svc = SVC(kernel='rbf')
 classifier_rf = RandomForestClassifier(random_state=42)
 classifier_dt = DecisionTreeClassifier(random_state=42)

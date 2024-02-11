@@ -19,6 +19,8 @@ function Login() {
             })
             if (response.data.msg === "Login successful") {
                 localStorage.setItem('isLoggedIn', 'true');
+                localStorage.setItem('name', response.data.name); 
+                localStorage.setItem('email', response.data.email);
                 alert("Login successful");
                 navigate('/dashboard'); 
             } else {

@@ -110,8 +110,9 @@ body {
     font-size: 1.4rem;
 }
 .chatbox{
-    max-height: 24rem;
+    max-height: 22rem;
     padding: 12px;
+    padding-bottom: 24px;
 }
 .chatbox {
     overflow-y: scroll;

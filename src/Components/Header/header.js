@@ -5,14 +5,12 @@ import { Link } from 'react-router-dom';
 class Header extends React.Component {
   constructor(props) {
     super(props);
-    // Initialize isLoggedIn to false by default
     this.state = {
       isLoggedIn: false,
     };
   }
 
   componentDidMount() {
-    // Check if the user was previously logged in
     const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
     if (isLoggedIn) {
       this.setState({ isLoggedIn: true });
@@ -20,7 +18,6 @@ class Header extends React.Component {
   }
 
   handleLogout = () => {
-    // Clear localStorage and set isLoggedIn to false
     localStorage.clear();
     this.setState({ isLoggedIn: false });
   };

@@ -17,7 +17,7 @@
   z-index:0;
   margin-top: 2rem;
   width: 65vw;
-  height:75vh;
+  height:80vh;
   border: 1px solid rgba(44, 50, 45, 0.2);
   border-radius: 1rem;
   background-color: #0000003b;
@@ -50,14 +50,14 @@
 .Signup-box, .login-box{
   z-index:1;
   position: relative;
-  top:1%;
-  width: 28rem;
+  top: 0.01em;
+  width: 30rem;
   margin: 1rem auto;
   position: relative;
   justify-content:  center;
   align-items: center;
   padding: 2rem;
-  margin-left: 8rem;
+  margin-left: 3rem;
 
 }
 
@@ -65,7 +65,7 @@ h2 {
   color: #f7faf8;
   font-size: 33px;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
   
 form {
