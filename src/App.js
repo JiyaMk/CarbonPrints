@@ -6,7 +6,7 @@ import { Home } from './Components/Home/Home';
 import Calculator from './Components/Calculator/Calculator';
 import Insights from './Components/Insights/Insights';
 import Landing from './Components/Landing/Landing';
-import { Dashboard } from './Components/Dashboard/Dashboard';
+import Dashboard from'./Components/Dashboard/Dashboard';
 import LeaderboardPage from './Components/Leaderboard';
 
 function App() {
