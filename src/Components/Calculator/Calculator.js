@@ -1,12 +1,15 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Carousel, Button } from 'react-bootstrap';
 import './Calculator.css';
 import Header from '../Header/header';
 import Footer from '../Footer/footer';
+import Leaderboard from '../Leaderboard';
 
 const Calculator = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const resultRef = useRef(null); 
+  const resultRef = useRef(null);
+ 
+
   const topics = [
     {
       title: 'Energy Usage',
@@ -80,7 +83,19 @@ const Calculator = () => {
     }
   ];
 
-  const [selectedOptions, setSelectedOptions] = useState(Array.from({ length: topics.length }, () => [-1, -1])); 
+  const [selectedOptions, setSelectedOptions] = useState(Array.from({ length: topics.length }, () => [-1, -1]));
+  const [friends, setFriends] = useState([]); // State for storing friends' scores
+  useEffect(() => {
+    const storedFriends = JSON.parse(localStorage.getItem('friends'));
+    if (storedFriends) {
+      setFriends(storedFriends);
+    }
+  }, []);
+
+  // Save friends' scores to local storage whenever it changes
+  useEffect(() => {
+    localStorage.setItem('friends', JSON.stringify(friends));
+  }, [friends]);
 
   const scrollToResult = () => {
     if (resultRef.current) {
@@ -114,7 +129,9 @@ const Calculator = () => {
   };
 
   const isLastTopic = currentIndex === topics.length - 1;
-
+  const handleAddFriend = (friendName, friendScore) => {
+    setFriends([...friends, { name: friendName, score: friendScore }]);
+  };
   return (
     <>
       <Header />

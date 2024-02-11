@@ -7,6 +7,7 @@ import Calculator from './Components/Calculator/Calculator';
 import Insights from './Components/Insights/Insights';
 import Landing from './Components/Landing/Landing';
 import { Dashboard } from './Components/Dashboard/Dashboard';
+import LeaderboardPage from './Components/Leaderboard';
 
 function App() {
   return (
@@ -19,8 +20,13 @@ function App() {
         <Route path="/calculator" element={<Calculator />} />
         <Route path="/insights" element ={<Insights/>}/>
         <Route path="/dashboard" element ={<Dashboard/>}/>
+        <Route path="/Leaderboard" element ={<LeaderboardPage/>}/>
+        
       </Routes>
     </Router>
+    
+    
+
   );
 }
 
